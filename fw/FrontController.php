@@ -1,9 +1,9 @@
 <?php 
-namespace fw;
+namespace Fw;
 
 class FrontController
 {
-	const DEFAULS_ACTION = 'Index';
+	const DEFAULT_ACTION = 'IndexAction';
 	const DEFAULT_CONTROLLER = 'IndexController';
 	
 	protected $action = self::DEFAULT_ACTION;
@@ -15,14 +15,14 @@ class FrontController
 		$this->createURL();
 	}
 	
-	public function createURL()
+	protected function createURL()
 	{
 		$path = trim($_SERVER['REQUEST_URI'], '/');
-		@list($controller, $action, $param) = explode($path, '/', 3);
+		@list($controller, $action, $param) = explode('/',$path, 3);
 		
 		if($param)
 		{
-			$param = explode($param, '/');
+			$param = explode('/',$param);
 			
 			$parameters = array();
 			
@@ -52,17 +52,19 @@ class FrontController
 	public function setController($controller)
 	{
 		$this->controller = $controller ? ucfirst(strtolower($controller)) . 'Controller' : self::DEFAULT_CONTROLLER;
+		return $this;
 	}
 	
 	public function setParam(array $param)
 	{
 		$this->param = $param;
-		return $param;
+		return $this;
 	}
 	
 	public function setAction($action)
 	{
-		$this->action = $action ? ucfirst(strtolower($action)) . 'Action' : self::DEFAULT_ACTION;
+		$this->action = $action ? strtolower($action) . 'Action' : self::DEFAULT_ACTION;
+		return $this;
 	}
 	
 	public function start()

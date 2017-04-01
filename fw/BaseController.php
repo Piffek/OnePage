@@ -1,13 +1,8 @@
-<?php 
-namespace fw;
-
-class BaseController
-{
+<?php
+namespace Fw;
+class BaseController {
 	protected $request;
-	public function __contruct($request)
-	{
+	public function __construct($request) {
 		$this->request = $request;
 	}
 }
-
-?>

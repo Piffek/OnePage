@@ -1,7 +1,9 @@
 {
-	"autoload" : {
-		"psr-4" : {
-			"Fw\\" : "fw"
-		}
-	}
+	"require": {},
+    "autoload": {
+        "psr-4": {
+            "Fw\\": "fw",
+            "App\\": "App"
+        }
+    }
 }
