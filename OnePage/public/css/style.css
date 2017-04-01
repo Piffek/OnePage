@@ -1,4 +1,51 @@
+*
+{
+	margin:0;
+}
+
 body
 {
-	background-color:red;
+	background-color:#0C1C33;
+	font-size:20px;
+}
+
+header .logo
+{
+	text-align:center;
+	color:white;
+	margin-top:5%;
+	margin-bottom:2%;
+	letter-spacing:5px;
+}
+
+nav
+{
+	width:100%;
+	background-color:#3C6CFF;
+	text-align:center;
+}
+
+.menu
+{
+	list-style-type: none;
+}
+
+.menu li
+{
+	display:inline-block;
+	padding-left:10px;
+	padding-right:10px;
+	border-right:3px solid #0C1C33;
+}
+
+.menu li:first-child
+{
+	border-left:3px solid #0C1C33;
+}
+
+.menu a
+{
+	text-decoration:none;
+	color:#0C1C33;
+	font-weight:   ;
 }
