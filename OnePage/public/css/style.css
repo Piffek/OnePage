@@ -5,21 +5,26 @@
 	
 }
 
-article
+#content
 {
 	background: url('../img/programming2.jpg') center;
 	background-size:cover;
 	width:100vw;
 	height:100vh;
 	background-attachment:fixed;
-	
 }
+
+
 
 header
 {
 	width:100%;
 	background-color:#3C6CFF;
 	text-align:center;
+	background: -webkit-linear-gradient(#3C6CFF, transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3C6CFF, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3C6CFF, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3C6CFF, transparent); /* Standard syntax */
 }
 
 
