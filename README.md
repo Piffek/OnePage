@@ -1,5 +1,4 @@
 # OnePage
-CSS+HTML+JS+PHP - MVC project
 
 Install:<br>
 1.git clone https://github.com/Piffek/OnePage.git to htdocs.<br>
