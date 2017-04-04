@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html lang='pl'>
-<head>
-	<meta charser="UTF-8">
-	<title>My Page</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="keywords" content="Patryk, Piwko">
-	<link rel="stylesheet" href="OnePage/OnePage/public/css/style.css">
 
-	<!-- [if lt IE 9]>
-	<script>https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js</script>
-	<![endif]-->
-</head>
-<body>
-	<section id="content">
-		<header>
-			<h2 class="logo">Moje portfolio</h2>
-			<nav>
-				<ul class="menu">
-					<li><a id='one' href="#">Strona Główna</a></li>
-					<li><a id='two' href="#">O mnie</a></li>
-					<li><a id='tree' href="#">Kontakt</a></li>
-				</ul>
-				<form id='search'>
-					<input type='text'>
-				</form>
-				
-			</nav>
-		</header>
-		<article id='art'>
 <?php foreach ($this->show as $lang) : ?>
     <p><?= $lang['desc'] ?></p>
 <?php endforeach; ?>
-		</article>
-	</section>
-	<footer class="container-footer">
-	sdfs
-	</footer>
-</body>
-</html>

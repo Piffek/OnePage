@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="keywords" content="Patryk, Piwko">
 	<link rel="stylesheet" href="OnePage/OnePage/public/css/style.css">
-
+	<script type="text/javascript" src="OnePage/OnePage/public/js/data.js"></script>
 	<!-- [if lt IE 9]>
 	<script>https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js</script>
 	<![endif]-->
@@ -21,16 +21,14 @@
 					<li><a id='two' href="#">O mnie</a></li>
 					<li><a id='tree' href="#">Kontakt</a></li>
 				</ul>
-				<form id='search'>
-					<input type='text'>
+				<form id="search">
+					<input type='text' onkeyup="show(this.value)" >
 				</form>
 				
 			</nav>
 		</header>
-		<article id='art'>
-		<?php foreach ($this->users as $item) : ?>
-    		<p><?= $item['name'] ?></p>
-		<?php endforeach; ?>
+		<article>
+			 <span id="art"></span></p>
 		</article>
 	</section>
 	<footer class="container-footer">
