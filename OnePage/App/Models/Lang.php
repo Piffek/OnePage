@@ -2,7 +2,7 @@
 namespace App\Models;
 use App\DB\DBconnect;
 
-class Users extends DBconnect
+class Lang extends DBconnect
 {
 	
 }

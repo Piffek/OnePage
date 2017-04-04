@@ -18,13 +18,14 @@
 
 header
 {
+	height:150px;
 	width:100%;
-	background-color:#3C6CFF;
+	background-color:black;
 	text-align:center;
-	background: -webkit-linear-gradient(#3C6CFF, transparent); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#3C6CFF, transparent); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#3C6CFF, transparent); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#3C6CFF, transparent); /* Standard syntax */
+	background: -webkit-linear-gradient(black, transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, transparent); /* Standard syntax */
 }
 
 
@@ -34,6 +35,13 @@ header h2
 	text-align:center;
 	letter-spacing:5px;
 	color:white;
+	padding-top:20px;
+}
+
+#search
+{
+	float:left;
+	margin-left:10px;
 }
 
 
@@ -49,6 +57,7 @@ header h2
 	padding-left:10px;
 	padding-right:10px;
 	border-right:3px solid #0C1C33;
+	margin-top:20px;
 }
 
 .menu li:first-child
@@ -59,8 +68,8 @@ header h2
 .menu a
 {
 	text-decoration:none;
-	color:#0C1C33;
-	font-weight:   ;
+	color:white;
+		margin-top:-50;
 }
 
 .container-footer

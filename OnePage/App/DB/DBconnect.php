@@ -2,10 +2,10 @@
 namespace App\DB;
 require_once APP_PATH . '/../config.php';
 use \PDO;
-class connectDB
+class DBconnect
 {
-	protected $table;
-	protected $pdo;
+	public $table;
+	public $pdo;
 	public function __construct($table)
 	{
 		$this->table = $table;
@@ -27,6 +27,18 @@ class connectDB
 		$query = $this->pdo->prepare("SELECT * from ".$this->table."");
 		$query->execute();
 		
+		if (isset($query)) {
+			return $query;
+		} else {
+			return null;
+		}
+	}
+	
+	public function getWhere($what,$var)
+	{
+		$query = $this->pdo->prepare("SELECT * FROM ".$this->table." WHERE :".$what." = ".$what."");
+		$query->bindParam(':lang', $var);
+		$query->execute();
 		if (isset($query)) {
 			return $query;
 		} else {
